@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Myfirst test AngularJS</title>
+</head>
+<body ng-app="Myapp" ng-controller="personCtrl" >
+
+<input type="text" ng-model="newPerson" placeholder="Nom">
+<input type="submit" value="Envoyer" ng-click="ajouter()">
+<br>
+
+<ul>
+    <li ng-repeat="p in persons">
+        {{p | uppercase}}
+    </li>
+</ul>
+<script src="js/angular.js"></script>
+<script src="js/controller.js"></script>
+</body>
+</html>
